@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8"> <!--Set Charset-->
         <link rel="stylesheet" type="text/css" href="main.css"><!--Includes CSS File-->
-        <script type="text/javascript" src="scripts/demo_script_src.js"></script>
+        <script src="scripts/main.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!--Set Favicon-->
         <title>Solent Pizza! - Home</title><!--Page Title-->
     </head>
@@ -38,6 +38,20 @@
             
             <main>
                 <h3 id = "main_heading">Get in Touch!</h3>
+                
+                <div id = "contact_form" >
+                    <form name="myForm"
+onsubmit="return validateForm()" >
+                        <span>First Name</span><input id = "fn" type= "text" name="first_name" ><br>
+                        <span>Last Name</span><input id = "ln"  type= "text" name="last_name" ><br>
+                        <span>Email</span><input id = "e"  type= "text" name="email" ><br>
+                        <span>Phone Number</span><input id = "p"  type= "text" name="phone" ><br>
+                        <span>Your Message</span><input id = "m"  type= "text" name="message" ><br>
+                        <input type= "submit" value="Submit">
+                    </form>
+                </div>
+                
+                
                 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.09029384741!2d-1.409649699926349!3d50.90354535101994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s
                 0x0%3A0xdad0362f47acbbe0!2sWestquay+Shopping+Centre!5e0!3m2!1sen!2suk!4v1488506043466" 
