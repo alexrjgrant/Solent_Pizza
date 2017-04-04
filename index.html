@@ -12,7 +12,7 @@
     </head>
 
     
-    <body onload="set_time()"><!--.-->
+    <body onload="main();"><!--.-->
         <script type="text/javascript">
             
         </script>
@@ -43,15 +43,20 @@
             
             <main>
                 <div class = "m">
-                    <h3 id = "main_heading">Welcome to Solent Pizza!</h3>
-
+                    <div id = "mh">
+                        <h3 id = "main_heading">Welcome to Solent Pizza!</h3>
+                    </div>
+                    
                     <p>Home of the cheapest pizza in the south! Have your pizza your way - Dry/soggy, Burnt/Raw the choice is yours! </p>
+                    
+                    <img id = "pizza_slide" onmouseover= "c()" src="img/p1.jpg">
+                    
                 </div>
             </main>
             
             <footer><!--Footer-->
-                <div>
-                    <ul><!-- -->
+                <div id ="fl">
+                    <ul id = "footer_list"><!-- -->
                         <li><a href=#>Terms</a></li>
                         <li><a href=#>Privacy</a></li>
                         <li><a href=#>Beans</a></li>

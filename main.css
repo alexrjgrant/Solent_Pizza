@@ -4,7 +4,9 @@ html{font-family:"Bliss-Bold","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif
 
 #title{font-size: 80px; text-align: center; color:white; padding: 10px 0px 0px 0px; margin: auto}
 
-#main_heading{}
+#main_heading{font-size: 45px; margin-left: auto ; margin-right: auto; text-align: center}
+
+#mh{margin: -20px 0 -20px 150px; height: auto;width: auto}
 
 nav{float: left}
 
@@ -17,7 +19,7 @@ nav,header{background-color: #f14a51;}
 
 /* HEADER/NAV SIZE */
 header{height: 100px ; width: auto }
-nav   {height: 700px ; width: 150px}
+nav   {height: 800px ; width: 150px}
 
 
 /* LOGO */
@@ -26,9 +28,9 @@ nav   {height: 700px ; width: 150px}
 
 
 /* QUICK LINK MENU */
-#quick_links{list-style-type: none; text-align: center; padding: 0;margin: 0}
+#quick_links{list-style-type: none; text-align: center; padding: 0;margin: 0 ; font-size: 19px}
 
-li{padding: 5px;}
+li{padding: 10px;}
 
 
 /* HYPERLINK COLOUR/DESIGN */
@@ -42,7 +44,7 @@ a:link    {color: white;}
 /* ORDER FORM */
 #order_form {width: 45%;float: left; margin-left: 20px; font-size: 20px }
 
-#pizza_size,#toppings,#extras,#delivery_info,#current_order2{background-color: #eee; margin-bottom: 30px}
+#pizza_size,#toppings,#extras,#delivery_info,#current_order2{background-color: #ddd; margin-bottom: 30px}
 
 .option_heading{font-weight: 900}
 
@@ -50,7 +52,7 @@ a:link    {color: white;}
 
 
 /* FOOTER */
-footer{width: 100% ; height: 100px;background-color: #eee}
+footer{width: 100% ; height: 100px;background-color: #ddd}
 
 footer{margin: auto; padding:inherit; display: inline-block}
 
@@ -63,3 +65,28 @@ footer li a {color: white; padding: 16px; display :block; text-align: center; te
 #current_order {width: 35%;height: auto; float: left; margin-left: 20px; font-size: 20px }
 
 #current_time{float: right;margin: 0 10px 0 0}
+
+#pizza_slide{width: 750px; height: 375px; margin: 0 0 0 25px}
+
+#footer_list{}
+#footer_list{list-style-type: none; text-align: center; padding: 0;margin: 0;}
+
+  
+#fl{width: 300px; margin-left: auto; margin-right: auto ; font-weight: 800;}
+
+#contact_form{width:;margin: 0 0 0 275px; padding: 10px}
+
+td{padding-bottom:  10px ; font-size: 25px ; }
+.cf{; width: 300px ; font-size: 20px}
+
+#map_div{margin-left: 150px;}
+
+#map{width: 750px; height: 400px; margin: 0 0 20px 30px}
+
+#m{height: 60px}
+
+#submit{width: 200px; height: 40px; font-size : 25px ; float: right }
+
+#contact_sub_head{font-size: 30px; margin-left: 350px}
+
+#error_msg_1{display: one}
