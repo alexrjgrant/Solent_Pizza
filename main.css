@@ -62,3 +62,4 @@ footer li a {color: white; padding: 16px; display :block; text-align: center; te
 
 #current_order {width: 35%;height: auto; float: left; margin-left: 20px; font-size: 20px }
 
+#current_time{float: right;margin: 0 10px 0 0}

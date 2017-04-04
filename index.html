@@ -5,17 +5,18 @@
     <head>
         <meta charset="utf-8"> <!--Set Charset-->
         <link rel="stylesheet" type="text/css" href="main.css"><!--Includes CSS File-->
-        <script type="text/javascript" src="scripts/main.js"></script>
-        
+        <script src="scripts/main.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!--Set Favicon-->
         <title>Solent Pizza! - Home</title><!--Page Title-->
+     
     </head>
 
     
-    <body><!--.-->
+    <body onload="set_time()"><!--.-->
         <script type="text/javascript">
             
         </script>
+        
         
         <div id = "wrapper"><!--Body Wrapper-->
         
@@ -49,11 +50,18 @@
             </main>
             
             <footer><!--Footer-->
-                <ul><!-- -->
-                    <li><a href=#>Terms</a></li>
-                    <li><a href=#>Privacy</a></li>
-                    <li><a href=#>Beans</a></li>
-                </ul><!-- -->
+                <div>
+                    <ul><!-- -->
+                        <li><a href=#>Terms</a></li>
+                        <li><a href=#>Privacy</a></li>
+                        <li><a href=#>Beans</a></li>
+                    </ul><!-- -->
+                </div>
+                
+                <div id = "current_time">
+                    <p>Current Time</p>
+                    <p id = "time"></p>
+                </div>
             </footer><!--Footer-->
             
             </div><!--Body Wrapper-->
