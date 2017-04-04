@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8"> <!--Set Charset-->
         <link rel="stylesheet" type="text/css" href="main.css"><!--Includes CSS File-->
+        <script type="text/javascript" src="scripts/demo_script_src.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!--Set Favicon-->
         <title>Solent Pizza! - Make an Order</title><!--Page Title-->
     </head>
@@ -17,7 +18,7 @@
             <header><!--Header Page Top-->
                 
                 <img  id = "logo" src="img/Logo%20(600x600).png" alt="Logo"> <!--Set Logo-->
-                <h1>Solent Pizza!</h1> <!--Main heading-->
+                <h1 id = "title">Solent Pizza!</h1> <!--Main heading-->
                 
             </header><!--Header Page Top-->
             
@@ -25,9 +26,9 @@
             
             <nav><!--Left Navigation Bar-->
                 
-                <h5>Quick Links</h5>
+                <h5 id = nav_heading>Quick Links</h5>
                 
-                <ul><!--Navigation Hyperlinks-->
+                <ul id = "quick_links"><!--Navigation Hyperlinks-->
                     <li><a href="index.html">Home</a></li>
                     <li><a href="order.html">Make an Order</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -39,7 +40,7 @@
             
             <main> <!--Page Main-->
                  
-                <h3>Make your Order!</h3>
+                <h3 id = "main_heading">Make your Order!</h3>
             
                 <form><!--Pizza Order Form-->
                     <div id = "order_form"> <!--Pizza Order Form-->
@@ -104,21 +105,37 @@
                                 
                             </div><!--Delivery Information Options-->
 
-                            <input type="submit" value="Submit">
+                            <input id = "submit" type="submit" value="Submit">
                             
                         </div><!--Delivery Information Section-->
                     </div><!--Pizza Order Form-->
                 </form><!--Pizza Order Form-->
+                
+                <div id = "current_order">
+                    <div id = "current_order2">
+                    <p class = option_heading>Your Current Order </p>
+                    <div class = "options">
+                        <span>Base Size: </span><span>#</span><br>
+                        <span>Toppings: </span><span>#</span><br>
+                        <span>Extras: </span><span>#</span>
+                        <br>
+                        <span>Total: </span><span>#</span>
+                    </div>
+                    </div>
+                </div>
+                
             </main><!--Page Main-->
             
             
             
              <footer><!--Footer-->
-                <ul><!-- -->
+                <div id = f>
+                 <ul><!-- -->
                     <li><a href=#>Terms</a></li>
                     <li><a href=#>Privacy</a></li>
                     <li><a href=#>Beans</a></li>
-                </ul><!-- -->
+                 </ul><!-- -->
+                </div>
             </footer><!--Footer-->
             
             
