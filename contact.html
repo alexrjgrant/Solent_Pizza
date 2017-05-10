@@ -11,22 +11,17 @@
     </head>
 
     
-    <body><!--.-->
+    <body onload = "main_contact();"><!--.-->
         
         <div id = "wrapper"><!--Body Wrapper-->
         
             <header><!--Header Page Top-->
-                
                 <img  id = "logo" src="img/Logo%20(600x600).png" alt="Logo"> <!--Set Logo-->
-                <h1 id = "title">Solent Pizza!</h1> <!--Main heading-->
-                
+                <h1 id = "title">Solent Pizza!</h1> <!--Website Title-->
             </header><!--Header Page Top-->
             
-
-            
             <nav><!--Left Navigation Bar-->
-                
-                <h5 id = nav_heading>Quick Links</h5>
+                <h5 id = nav_heading>Quick Links</h5> <!--Nav Header-->
                 
                 <ul id = "quick_links"><!--Navigation Hyperlinks-->
                     <li><a href="index.html">Home</a></li>
@@ -37,77 +32,62 @@
             </nav><!--Left Navigation Bar-->
             
             <main>
-                <div id = "mh">
-                <h3 id = "main_heading">Get in Touch!</h3>
+                <div id = "mh"> <!--Main heading-->
+                    <h3 id = "main_heading">Get in Touch!</h3>
                 </div>
                 
-               <!-- <div id = "contact_form" >
-                    <form name="myForm"
-onsubmit="return validateForm()" >
-                        <span class = "q">First Name</span><input class = "cf" id = "fn" type= "text" name="first_name" ><br>
-                        <span class = "cf">Last Name</span><input class = "cf" id = "ln"  type= "text" name="last_name" ><br>
-                        <span class = "cf">Email</span><input class = "cf" id = "e"  type= "text" name="email" ><br>
-                        <span class = "cf">Phone Number</span><input class = "cf" id = "p"  type= "text" name="phone" ><br>
-                        <span class = "cf">Your Message</span><input class = "cf" id = "m"  type= "text" name="message" ><br>
-                        <input type= "submit" value="Submit">
+                <div id = "contact_form" > <!--contact form-->
+                    <form name="contact" >
+                        <table>
+                            <tr>
+                                <td class = "c1">First Name</td>
+                                <td><input class = "cf" id = "input_fn" type= "text" name="first_name" ></td>
+                                <td><span id = fn_tickcross></span></td>
+                            </tr>
+                            <tr>
+                                <td class = "c1">Last Name</td>
+                                <td><input class = "cf" id = "input_ln"  type= "text" name="last_name" ></td>
+                                <td><span id = ln_tickcross></span></td>
+                            </tr>
+                            <tr>
+                                <td class = "c1">Email</td>
+                                <td><input class = "cf" id = "input_e"  type= "text" name="email" ></td>
+                                <td><span id = e_tickcross></span></td>
+                            </tr>
+                            <tr>
+                                <td class = "c1">Phone Number</td>
+                                <td><input class = "cf" id = "input_p"  type= "text" name="phone" ></td>
+                            </tr>
+                            <tr>
+                                <td class = "c1">Message</td>
+                                <td><textarea class = "cf" id = "input_m" name="message" ></textarea></td>
+                                <td><span id = m_tickcross></span></td>
+                            </tr>
+                            <tr>
+                                <td colspan = "2"><span id = "error_msg_1"> ERROR Please Retry</span><input id = "submit" type="submit" name="Submit" value ="SUBMIT"></td>
+                            </tr>
+                        </table>
                     </form>
-                </div> -->
-                
-              <div id = "contact_form" >
-                <form name="myForm" onsubmit="return validateForm()" >
-                    <table>
-                        <tr>
-                            <td class = "c1">First Name</td>
-                            <td><input class = "cf" id = "fn" type= "text" name="first_name" ></td>
-                            <td>✔</td>
-                        </tr>
-                        <tr>
-                            <td class = "c1">Last Name</td>
-                            <td><input class = "cf" id = "ln"  type= "text" name="last_name" ></td>
-                            <td>✔✘</td>
-                        </tr>
-                        <tr>
-                            <td class = "c1">Email</td>
-                            <td><input class = "cf" id = "e"  type= "text" name="email" ></td>
-                            <td>✔</td>
-                        </tr>
-                        <tr>
-                            <td class = "c1">Phone Number</td>
-                            <td><input class = "cf" id = "p"  type= "text" name="phone" ></td>
-                        </tr>
-                        <tr>
-                            <td class = "c1">Message</td>
-                            <td><textarea class = "cf" id = "m"  type= "text" name="message" ></textarea></td>
-                            <td>✔</td>
-                        </tr>
-                        <tr>
-                            <td> <p id = "error_msg_1"> ERROR -etry</p></td>
-                            <td><input id = "submit" type="submit" name="Submit"></td>
-                        </tr>
-                    </table>
-                   
-                </form>
                 </div> 
-                
-                
+                    
                 <p id = "contact_sub_head">And Here's Where To Find Us...</p>
-                
-                
-                <div id = "map_div">
-                    <iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.09029384741!2d-1.409649699926349!3d50.90354535101994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s
-                    0x0%3A0xdad0362f47acbbe0!2sWestquay+Shopping+Centre!5e0!3m2!1sen!2suk!4v1488506043466"></iframe>
+                    
+                    
+               <div id = "map_div"><!--map-->
+                    <iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.09029384741!2d-1.409649699926349!3d50.90354535101994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdad0362f47acbbe0!2sWestquay+Shopping+Centre!5e0!3m2!1sen!2suk!4v1488506043466"></iframe>
                 </div>
-                
-                
-                
+    
             </main>
-              <footer><!--Footer-->
-                <ul><!-- -->
-                    <li><a href=#>Terms</a></li>
-                    <li><a href=#>Privacy</a></li>
-                    <li><a href=#>Beans</a></li>
-                </ul><!-- -->
-            </footer><!--Footer-->
+        
+            <footer><!--Footer-->
+                <div id ="fl"><!--footer ul-->
+                    <ul id = "footer_list"><!-- -->
+                        <li><a href=#>Terms</a></li>
+                        <li><a href=#>Privacy</a></li>
+                        <li><a href=#>Social Media</a></li>
+                    </ul><!-- -->
+                </div><!--footer ul-->
+          
         </div><!--Body Wrapper-->
     </body><!--.-->
 </html><!--Index Page-->

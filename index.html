@@ -8,26 +8,16 @@
         <script src="scripts/main.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!--Set Favicon-->
         <title>Solent Pizza! - Home</title><!--Page Title-->
-     
     </head>
-
     
-    <body onload="main();"><!--.-->
-        <script type="text/javascript">
-            
-        </script>
-        
+    <body onload="main_index();"><!--.-->
         
         <div id = "wrapper"><!--Body Wrapper-->
         
             <header><!--Header Page Top-->
-                
                 <img  id = "logo" src="img/Logo%20(600x600).png" alt="Logo"> <!--Set Logo-->
-                <h1 id = "title">Solent Pizza!</h1> <!--Main heading-->
-                
+                <h1 id = "title">Solent Pizza!</h1> <!--Website Title-->
             </header><!--Header Page Top-->
-            
-            
             
             <nav><!--Left Navigation Bar-->
                 
@@ -42,33 +32,44 @@
             </nav><!--Left Navigation Bar-->
             
             <main>
-                <div class = "m">
                     <div id = "mh">
-                        <h3 id = "main_heading">Welcome to Solent Pizza!</h3>
+                        <h3 id = "main_heading">Welcome to Solent Pizza!</h3> <!--Main heading-->
                     </div>
                     
-                    <p>Home of the cheapest pizza in the south! Have your pizza your way - Dry/soggy, Burnt/Raw the choice is yours! </p>
+                    <p class = "main_txt">Home of the cheapest pizza in the south! Have your pizza your way! </p>
                     
-                    <img id = "pizza_slide" onmouseover= "c()" src="img/p1.jpg">
+                    <img id = "pizza_slide" src="img/p1.jpg" alt="Pizza Carousel"> <!--Image Carousel -->
                     
-                </div>
+                    <p class = "main_txt"> See something you like? Then hit 'Make an order'</p>
+                    
+                    <div id = "rollover_imgs"><!--Rolover Images lvl2-->
+                        <img id = "img_pizza1" class = "main_img" alt="Pizza Rollover Image 1" src="img/p1.jpg">
+                        <img id = "img_pizza2" class = "main_img" alt="Pizza Rollover Image 2" src="img/p6.jpg"> 
+                    </div><!--Rolover Images lvl2-->
+                    
+                    <p class = "main_txt">Want some extras?! We've got 'em</p>
+                    
+                    <div id = "lvl3imgs"><!--Imageslvl3-->
+                        <img id = "img_pizza3" class = "main_img" alt="Chips Image" src="img/chips.png">
+                        <img id = "img_pizza4" class = "main_img" alt="Garlic Bread Image" src="img/garlicbread.png"> 
+                    </div><!--Imageslvl3-->
             </main>
             
             <footer><!--Footer-->
-                <div id ="fl">
+                <div id ="fl"><!--footer ul-->
                     <ul id = "footer_list"><!-- -->
                         <li><a href=#>Terms</a></li>
                         <li><a href=#>Privacy</a></li>
-                        <li><a href=#>Beans</a></li>
+                        <li><a href=#>Social Media</a></li>
                     </ul><!-- -->
-                </div>
+                </div><!--footer ul-->
                 
-                <div id = "current_time">
-                    <p>Current Time</p>
-                    <p id = "time"></p>
-                </div>
+                <div id = "current_time"><!--Current time/date-->
+                    <p id = "time" class ="current_dt"></p>
+                    <p id = "date" class ="current_dt"></p>
+                </div><!--Current time/date-->
             </footer><!--Footer-->
             
-            </div><!--Body Wrapper-->
-    </body><!--.-->
+        </div><!--Body Wrapper-->
+    </body><!--body-->
 </html><!--Index Page-->
